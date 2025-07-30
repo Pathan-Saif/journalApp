@@ -1,0 +1,158 @@
+25-07-19 15:22:00.095 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext --- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\HP\Downloads\journalApp\Spring Boot\journalApp\target\classes\net\engineeringsaif\journalApp\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userDetailServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in net.engineeringsaif.journalApp.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'    
+25-07-19 15:22:00.201 [main] INFO  o.a.catalina.core.StandardService --- Stopping service [Tomcat]    
+25-07-19 15:22:00.235 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger --- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.    
+25-07-19 15:22:00.273 [main] ERROR o.s.boot.SpringApplication --- Application run failed    
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [C:\Users\HP\Downloads\journalApp\Spring Boot\journalApp\target\classes\net\engineeringsaif\journalApp\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userDetailServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in net.engineeringsaif.journalApp.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at net.engineeringsaif.journalApp.JournalApplication.main(JournalApplication.java:17)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailServiceImp': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in net.engineeringsaif.journalApp.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1448)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in net.engineeringsaif.journalApp.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1448)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1358)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='mdsaifalikhan493', source='admin', password=<hidden>, mechanismProperties=<hidden>}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='mdsaifalikhan493', source='admin', password=<hidden>, mechanismProperties=<hidden>}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 57 common frames omitted
+Caused by: org.springframework.data.mongodb.UncategorizedMongoDbException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='mdsaifalikhan493', source='admin', password=<hidden>, mechanismProperties=<hidden>}
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:135)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:3020)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:605)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.execute(DefaultIndexOperations.java:217)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.ensureIndex(DefaultIndexOperations.java:121)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.createIndex(MongoPersistentEntityIndexCreator.java:153)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForAndCreateIndexes(MongoPersistentEntityIndexCreator.java:143)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForIndexes(MongoPersistentEntityIndexCreator.java:127)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:96)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:73)
+	at org.springframework.data.mongodb.core.MongoTemplate.<init>(MongoTemplate.java:265)
+	at org.springframework.boot.autoconfigure.data.mongo.MongoDatabaseFactoryDependentConfiguration.mongoTemplate(MongoDatabaseFactoryDependentConfiguration.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 58 common frames omitted
+Caused by: com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='mdsaifalikhan493', source='admin', password=<hidden>, mechanismProperties=<hidden>}
+	at com.mongodb.internal.connection.SaslAuthenticator.wrapException(SaslAuthenticator.java:270)
+	at com.mongodb.internal.connection.SaslAuthenticator.lambda$authenticate$0(SaslAuthenticator.java:86)
+	at com.mongodb.internal.connection.SaslAuthenticator.doAsSubject(SaslAuthenticator.java:277)
+	at com.mongodb.internal.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:59)
+	at com.mongodb.internal.connection.DefaultAuthenticator.authenticate(DefaultAuthenticator.java:57)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.authenticate(InternalStreamConnectionInitializer.java:206)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.finishHandshake(InternalStreamConnectionInitializer.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:206)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.open(UsageTrackingInternalConnection.java:55)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.open(DefaultConnectionPool.java:625)
+	at com.mongodb.internal.connection.DefaultConnectionPool$OpenConcurrencyLimiter.openWithConcurrencyLimit(DefaultConnectionPool.java:965)
+	at com.mongodb.internal.connection.DefaultConnectionPool$OpenConcurrencyLimiter.openOrGetAvailable(DefaultConnectionPool.java:906)
+	at com.mongodb.internal.connection.DefaultConnectionPool.get(DefaultConnectionPool.java:203)
+	at com.mongodb.internal.connection.DefaultConnectionPool.get(DefaultConnectionPool.java:192)
+	at com.mongodb.internal.connection.DefaultServer.getConnection(DefaultServer.java:96)
+	at com.mongodb.internal.binding.ClusterBinding$ClusterBindingConnectionSource.getConnection(ClusterBinding.java:178)
+	at com.mongodb.client.internal.ClientSessionBinding$SessionBindingConnectionSource.getConnection(ClientSessionBinding.java:196)
+	at com.mongodb.internal.operation.SyncOperationHelper.withConnectionSource(SyncOperationHelper.java:158)
+	at com.mongodb.internal.operation.SyncOperationHelper.withConnection(SyncOperationHelper.java:105)
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:129)
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:68)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:173)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:912)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:895)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:890)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:875)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.lambda$ensureIndex$0(DefaultIndexOperations.java:131)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:603)
+	... 70 common frames omitted
+Caused by: com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'bad auth : authentication failed' on server ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017. The full response is {"ok": 0, "errmsg": "bad auth : authentication failed", "code": 8000, "codeName": "AtlasError"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:205)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:431)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:354)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.SaslAuthenticator.sendSaslContinue(SaslAuthenticator.java:228)
+	at com.mongodb.internal.connection.SaslAuthenticator.lambda$authenticate$0(SaslAuthenticator.java:75)
+	... 96 common frames omitted
+25-07-19 15:22:46.239 [main] INFO  n.e.journalApp.JournalApplication --- Starting JournalApplication using Java 21.0.1 with PID 13152 (C:\Users\HP\Downloads\journalApp\Spring Boot\journalApp\target\classes started by Saif Ali in C:\Users\HP\Downloads\journalApp\Spring Boot)    
+25-07-19 15:22:46.241 [main] INFO  n.e.journalApp.JournalApplication --- The following 1 profile is active: "dev"    
+25-07-19 15:22:46.924 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate --- Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.    
+25-07-19 15:22:46.987 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate --- Finished Spring Data repository scanning in 58 ms. Found 2 MongoDB repository interfaces.    
+25-07-19 15:22:47.536 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer --- Tomcat initialized with port 8081 (http)    
+25-07-19 15:22:47.547 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Initializing ProtocolHandler ["http-nio-8081"]    
+25-07-19 15:22:47.549 [main] INFO  o.a.catalina.core.StandardService --- Starting service [Tomcat]    
+25-07-19 15:22:47.549 [main] INFO  o.a.catalina.core.StandardEngine --- Starting Servlet engine: [Apache Tomcat/10.1.42]    
+25-07-19 15:22:47.596 [main] INFO  o.a.c.c.C.[.[localhost].[/journal] --- Initializing Spring embedded WebApplicationContext    
+25-07-19 15:22:47.596 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext --- Root WebApplicationContext: initialization completed in 1299 ms    
+25-07-19 15:22:47.931 [main] INFO  org.mongodb.driver.client --- MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='mdsaifalikhan493', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4d464510, com.mongodb.Jep395RecordCodecProvider@64e7d698, com.mongodb.KotlinCodecProvider@2519026b]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.ulnohfc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-1wxpy7-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}    
+25-07-19 15:22:48.019 [cluster-ClusterId{value='687b6aef8140c672570178b4', description='Cluster0'}-srv-cluster0.ulnohfc.mongodb.net] INFO  org.mongodb.driver.cluster --- Adding discovered server ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017 to client view of cluster    
+25-07-19 15:22:48.045 [cluster-ClusterId{value='687b6aef8140c672570178b4', description='Cluster0'}-srv-cluster0.ulnohfc.mongodb.net] INFO  org.mongodb.driver.cluster --- Adding discovered server ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017 to client view of cluster    
+25-07-19 15:22:48.054 [cluster-ClusterId{value='687b6aef8140c672570178b4', description='Cluster0'}-srv-cluster0.ulnohfc.mongodb.net] INFO  org.mongodb.driver.cluster --- Adding discovered server ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017 to client view of cluster    
+25-07-19 15:22:48.309 [main] INFO  org.mongodb.driver.cluster --- Waiting for server to become available for operation with ID 1. Remaining time: 30000 ms. Selector: WritableServerSelector, topology description: {type=REPLICA_SET, servers=[{address=ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}].    
+25-07-19 15:22:48.574 [cluster-ClusterId{value='687b6aef8140c672570178b4', description='Cluster0'}-ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Monitor thread successfully connected to server with description ServerDescription{address=ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=281382200, setName='atlas-1wxpy7-shard-0', canonicalAddress=ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, hosts=[ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017], passives=[], arbiters=[], primary='ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=43, topologyVersion=TopologyVersion{processId=687ab04ea72722a3006fd89b, counter=3}, lastWriteDate=Sat Jul 19 15:22:46 IST 2025, lastUpdateTimeNanos=790154527026600}    
+25-07-19 15:22:48.574 [cluster-ClusterId{value='687b6aef8140c672570178b4', description='Cluster0'}-ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Monitor thread successfully connected to server with description ServerDescription{address=ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=282467000, setName='atlas-1wxpy7-shard-0', canonicalAddress=ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, hosts=[ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017], passives=[], arbiters=[], primary='ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004c, setVersion=43, topologyVersion=TopologyVersion{processId=687aad850157431547d92519, counter=6}, lastWriteDate=Sat Jul 19 15:22:46 IST 2025, lastUpdateTimeNanos=790154527026600}    
+25-07-19 15:22:48.574 [cluster-ClusterId{value='687b6aef8140c672570178b4', description='Cluster0'}-ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Monitor thread successfully connected to server with description ServerDescription{address=ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=281382400, setName='atlas-1wxpy7-shard-0', canonicalAddress=ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017, hosts=[ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017], passives=[], arbiters=[], primary='ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=43, topologyVersion=TopologyVersion{processId=687aaa6baa2a43f2ed60af0b, counter=4}, lastWriteDate=Sat Jul 19 15:22:46 IST 2025, lastUpdateTimeNanos=790154527026600}    
+25-07-19 15:22:48.578 [cluster-ClusterId{value='687b6aef8140c672570178b4', description='Cluster0'}-ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Discovered replica set primary ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017 with max election id 7fffffff000000000000004c and max set version 43    
+25-07-19 15:22:49.119 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer --- Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider    
+25-07-19 15:22:49.120 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer --- Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.    
+25-07-19 15:22:49.572 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Starting ProtocolHandler ["http-nio-8081"]    
+25-07-19 15:22:49.587 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer --- Tomcat started on port 8081 (http) with context path '/journal'    
+25-07-19 15:22:49.594 [main] INFO  n.e.journalApp.JournalApplication --- Started JournalApplication in 3.767 seconds (process running for 4.396)    

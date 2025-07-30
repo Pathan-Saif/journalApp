@@ -1,0 +1,123 @@
+25-07-28 15:17:22.840 [main] INFO  n.e.journalApp.JournalApplication --- Starting JournalApplication using Java 21.0.1 with PID 17920 (C:\Users\HP\Downloads\journalApp\Spring Boot\journalApp\target\classes started by Saif Ali in C:\Users\HP\Downloads\journalApp\Spring Boot)    
+25-07-28 15:17:22.857 [main] INFO  n.e.journalApp.JournalApplication --- No active profile set, falling back to 1 default profile: "default"    
+25-07-28 15:17:24.068 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate --- Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.    
+25-07-28 15:17:24.214 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate --- Finished Spring Data repository scanning in 133 ms. Found 3 MongoDB repository interfaces.    
+25-07-28 15:17:25.131 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer --- Tomcat initialized with port 8081 (http)    
+25-07-28 15:17:25.147 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Initializing ProtocolHandler ["http-nio-8081"]    
+25-07-28 15:17:25.149 [main] INFO  o.a.catalina.core.StandardService --- Starting service [Tomcat]    
+25-07-28 15:17:25.149 [main] INFO  o.a.catalina.core.StandardEngine --- Starting Servlet engine: [Apache Tomcat/10.1.42]    
+25-07-28 15:17:25.222 [main] INFO  o.a.c.c.C.[.[localhost].[/journal] --- Initializing Spring embedded WebApplicationContext    
+25-07-28 15:17:25.224 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext --- Root WebApplicationContext: initialization completed in 2266 ms    
+25-07-28 15:17:25.936 [main] INFO  org.mongodb.driver.client --- MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='mdsaifalikhan493', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5785e813, com.mongodb.Jep395RecordCodecProvider@10b8b900, com.mongodb.KotlinCodecProvider@6d294ddc]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.ulnohfc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-1wxpy7-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}    
+25-07-28 15:17:25.970 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-srv-cluster0.ulnohfc.mongodb.net] INFO  org.mongodb.driver.cluster --- Adding discovered server ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017 to client view of cluster    
+25-07-28 15:17:26.018 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-srv-cluster0.ulnohfc.mongodb.net] INFO  org.mongodb.driver.cluster --- Adding discovered server ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017 to client view of cluster    
+25-07-28 15:17:26.033 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-srv-cluster0.ulnohfc.mongodb.net] INFO  org.mongodb.driver.cluster --- Adding discovered server ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017 to client view of cluster    
+25-07-28 15:17:26.492 [main] INFO  org.mongodb.driver.cluster --- Waiting for server to become available for operation with ID 1. Remaining time: 30000 ms. Selector: WritableServerSelector, topology description: {type=REPLICA_SET, servers=[{address=ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}].    
+25-07-28 15:17:26.903 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Exception in monitor thread while connecting to server ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017    
+com.mongodb.MongoSocketWriteException: Exception sending message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:365)
+	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:204)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1291)
+	at com.mongodb.internal.connection.SocketStream.write(SocketStream.java:165)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:561)
+	... 10 common frames omitted
+25-07-28 15:17:26.996 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Exception in monitor thread while connecting to server ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017    
+com.mongodb.MongoSocketWriteException: Exception sending message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:365)
+	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:204)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1291)
+	at com.mongodb.internal.connection.SocketStream.write(SocketStream.java:165)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:561)
+	... 10 common frames omitted
+25-07-28 15:17:27.028 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Exception in monitor thread while connecting to server ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017    
+com.mongodb.MongoSocketWriteException: Exception sending message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:691)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:564)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:396)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:346)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:132)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:365)
+	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:287)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:204)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1291)
+	at com.mongodb.internal.connection.SocketStream.write(SocketStream.java:165)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:561)
+	... 10 common frames omitted
+25-07-28 15:17:29.440 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Monitor thread successfully connected to server with description ServerDescription{address=ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=548231700, setName='atlas-1wxpy7-shard-0', canonicalAddress=ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, hosts=[ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017], passives=[], arbiters=[], primary='ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004c, setVersion=43, topologyVersion=TopologyVersion{processId=687aad850157431547d92519, counter=6}, lastWriteDate=Mon Jul 28 15:17:28 IST 2025, lastUpdateTimeNanos=431095871078300}    
+25-07-28 15:17:29.443 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Monitor thread successfully connected to server with description ServerDescription{address=ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=521739600, setName='atlas-1wxpy7-shard-0', canonicalAddress=ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, hosts=[ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017], passives=[], arbiters=[], primary='ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=43, topologyVersion=TopologyVersion{processId=687ab04ea72722a3006fd89b, counter=3}, lastWriteDate=Mon Jul 28 15:17:28 IST 2025, lastUpdateTimeNanos=431095879393400}    
+25-07-28 15:17:29.444 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Discovered replica set primary ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017 with max election id 7fffffff000000000000004c and max set version 43    
+25-07-28 15:17:29.460 [cluster-ClusterId{value='6887472d508cd21ab44b42b0', description='Cluster0'}-ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017] INFO  org.mongodb.driver.cluster --- Monitor thread successfully connected to server with description ServerDescription{address=ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=393670400, setName='atlas-1wxpy7-shard-0', canonicalAddress=ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017, hosts=[ac-quzdbxh-shard-00-01.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017, ac-quzdbxh-shard-00-00.ulnohfc.mongodb.net:27017], passives=[], arbiters=[], primary='ac-quzdbxh-shard-00-02.ulnohfc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=43, topologyVersion=TopologyVersion{processId=687aaa6baa2a43f2ed60af0b, counter=4}, lastWriteDate=Mon Jul 28 15:17:28 IST 2025, lastUpdateTimeNanos=431095895104000}    
+25-07-28 15:17:31.196 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer --- Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider    
+25-07-28 15:17:31.197 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer --- Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.    
+25-07-28 15:17:31.983 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Starting ProtocolHandler ["http-nio-8081"]    
+25-07-28 15:17:32.001 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer --- Tomcat started on port 8081 (http) with context path '/journal'    
+25-07-28 15:17:32.023 [main] INFO  n.e.journalApp.JournalApplication --- Started JournalApplication in 9.886 seconds (process running for 11.092)    
+25-07-28 15:17:56.620 [main] INFO  n.e.journalApp.JournalApplication --- Starting JournalApplication using Java 21.0.1 with PID 15376 (C:\Users\HP\Downloads\journalApp\Spring Boot\journalApp\target\classes started by Saif Ali in C:\Users\HP\Downloads\journalApp\Spring Boot)    
+25-07-28 15:17:56.624 [main] INFO  n.e.journalApp.JournalApplication --- No active profile set, falling back to 1 default profile: "default"    
+25-07-28 15:17:57.783 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate --- Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.    
+25-07-28 15:17:57.911 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate --- Finished Spring Data repository scanning in 120 ms. Found 3 MongoDB repository interfaces.    
+25-07-28 15:17:58.834 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer --- Tomcat initialized with port 8081 (http)    
+25-07-28 15:17:58.850 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Initializing ProtocolHandler ["http-nio-8081"]    
+25-07-28 15:17:58.853 [main] INFO  o.a.catalina.core.StandardService --- Starting service [Tomcat]    
+25-07-28 15:17:58.854 [main] INFO  o.a.catalina.core.StandardEngine --- Starting Servlet engine: [Apache Tomcat/10.1.42]    
+25-07-28 15:17:58.927 [main] INFO  o.a.c.c.C.[.[localhost].[/journal] --- Initializing Spring embedded WebApplicationContext    
+25-07-28 15:17:58.928 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext --- Root WebApplicationContext: initialization completed in 2221 ms    
+25-07-28 15:17:59.474 [main] INFO  org.mongodb.driver.client --- MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='mdsaifalikhan493', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4270b142, com.mongodb.Jep395RecordCodecProvider@2dfa02c1, com.mongodb.KotlinCodecProvider@6314df3c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.ulnohfc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-1wxpy7-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}    
+25-07-28 15:17:59.990 [main] INFO  org.mongodb.driver.cluster --- Waiting for server to become available for operation with ID 1. Remaining time: 30000 ms. Selector: WritableServerSelector, topology description: {type=UNKNOWN, servers=[].    
