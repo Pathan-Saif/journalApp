@@ -1,3 +1,0 @@
-25-07-29 23:52:10.064 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/journal] --- Initializing Spring DispatcherServlet 'dispatcherServlet'    
-25-07-29 23:52:10.067 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- Initializing Servlet 'dispatcherServlet'    
-25-07-29 23:52:10.070 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- Completed initialization in 3 ms    
